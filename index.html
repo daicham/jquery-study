@@ -126,6 +126,11 @@
     $('li:eq(0)').html('<a href="">リンク</a>があります!');
     $('li:eq(1)').text('書き換えました!');
     $('li:eq(2)').wrap('<strong></strong>');
+
+    $('ul').children().css('color', 'red');
+    $('ul').parent().css('color', 'blue');
+    $('li:eq(1)').prev().css('color', 'blue');
+    $('li:eq(0)').next().css('color', 'yellow');
   </script>
 </body>
 </html>
