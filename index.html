@@ -32,6 +32,7 @@
       <li class="listitem">2番</li>
       <li><a href="http://yahoo.co.jp">3番</a></li>
     </ul>
+    <input type="text" value="子猫" id="search"> <input type="submit" value="検索">
   </div><!-- /main -->
   <script>
     $(function() {
@@ -59,6 +60,9 @@
 
       $('#menu3 li').addClass('font36');
       $('#menu3 li:eq(2)').removeClass('font36');
+
+      $('#search').val('大猫');
+      console.log($('#search').val());
     })
   </script>
 </body>
