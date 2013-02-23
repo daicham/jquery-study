@@ -115,6 +115,13 @@
     $('#menu').after(img_after);
     $('#menu').prepend('<li>prepended by jquery</li>');
     $('#menu').append('<li>append by jquery</li>');
+
+    $('#menu3 li:last').click(function() {
+      $(this).remove();
+    });
+    $('#menu3 li:first').click(function() {
+      $(this).empty();
+    });
   </script>
 </body>
 </html>
