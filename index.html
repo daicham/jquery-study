@@ -72,6 +72,21 @@
       $('h1').click(function () {
         $('#main').toggle();
       });
+
+      $('.listitem')
+        .mouseover(function() {
+          $(this).addClass('font36');
+        })
+        .mouseout(function() {
+          $(this).removeClass('font36');
+        });
+      $('h1').hover(
+        function() {
+          $(this).addClass('font36');
+        },
+        function() {
+          $(this).removeClass('font36');
+        });
     });
   </script>
 </body>
