@@ -122,6 +122,10 @@
     $('#menu3 li:first').click(function() {
       $(this).empty();
     });
+
+    $('li:eq(0)').html('<a href="">リンク</a>があります!');
+    $('li:eq(1)').text('書き換えました!');
+    $('li:eq(2)').wrap('<strong></strong>');
   </script>
 </body>
 </html>
