@@ -7,11 +7,24 @@
 </head>
 <body>
   <h1>jQueryの練習</h1>
+  <div id="main">
+    <p>これは練習です。こちらは、<a href="http://google.com/">リンク</a>です。</p>
+    <ul id="menu">
+      <li>0番</li>
+      <li class="listitem">1番</li>
+      <li class="listitem">2番</li>
+      <li><a href="http://yahoo.co.jp">3番</a></li>
+    </ul>
+  </div><!-- /main -->
   <script>
     $(function() {
-      // jQueryのコードはこちらに
       // セレクタ.メソッド
-      $('h1').css('color', 'red').hide('slow');
+      $('h1').css('color', 'red');
+      $('#main').css('background-color', 'gray');
+      $('.listitem').css('color', 'blue');
+      $('.listitem, h1').css('background-color', 'pink');
+      $('ul>li').css('text-align', 'center');
+      $('#main a').css('background-color', 'green');
     })
   </script>
 </body>
