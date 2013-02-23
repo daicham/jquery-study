@@ -108,6 +108,13 @@
         .show()
         .hide('4000');
     });
+
+    var img_before = $('<img>').attr('src', 'https://si0.twimg.com/profile_images/1352777613/image_normal.jpg');
+    var img_after = $('<img>').attr('src', 'https://si0.twimg.com/profile_images/1352777613/image_normal.jpg');
+    $('#menu').before(img_before);
+    $('#menu').after(img_after);
+    $('#menu').prepend('<li>prepended by jquery</li>');
+    $('#menu').append('<li>append by jquery</li>');
   </script>
 </body>
 </html>
