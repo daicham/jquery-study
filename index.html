@@ -21,6 +21,12 @@
       <li class="listitem">2番</li>
       <li><a href="http://yahoo.co.jp">3番</a></li>
     </ul>
+    <ul id="menu3">
+      <li>0番</li>
+      <li class="listitem">1番</li>
+      <li class="listitem">2番</li>
+      <li><a href="http://yahoo.co.jp">3番</a></li>
+    </ul>
   </div><!-- /main -->
   <script>
     $(function() {
@@ -39,6 +45,12 @@
       $('#menu2 li:eq(2)').css('font-size', 'x-large');
       $('#menu2 li:gt(2)').css('font-size', 'small');
       $('#menu2 li:contains("0番")').css('font-size', '40px');
+
+      $('#menu3 li').css({
+        'background-color': 'white',
+        'border': '1px solid #ccc'
+      });
+      console.log($('#menu3 li').css('font-size'));
     })
   </script>
 </body>
