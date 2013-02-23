@@ -98,6 +98,15 @@
         .change(function() {
           alert('値が変わったよ!');
         });
+
+      $('h1')
+        .hide('2000', function() {
+          alert('隠し終わりました!')
+        })
+        .show('5000')
+        .hide('slow')
+        .show()
+        .hide('4000');
     });
   </script>
 </body>
