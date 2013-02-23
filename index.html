@@ -63,6 +63,11 @@
 
       $('#search').val('大猫');
       console.log($('#search').val());
+
+      $('.listitem').click(function() {
+        $(this).css('color', 'green');
+      });
+      $('.listitem:eq(0)').click();
     })
   </script>
 </body>
