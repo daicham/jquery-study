@@ -87,6 +87,17 @@
         function() {
           $(this).removeClass('font36');
         });
+
+      $('#search')
+        .focus(function() {
+          $(this).css('color', 'red');
+        })
+        .blur(function() {
+          $(this).css('color', 'black');
+        })
+        .change(function() {
+          alert('値が変わったよ!');
+        });
     });
   </script>
 </body>
