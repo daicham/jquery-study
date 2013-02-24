@@ -12,7 +12,9 @@
   <script>
     $(function() {
       $('#kick_ajax').click(function() {
-        $('#main').load('contents.txt');
+        $('#main').load('contents.txt', function() {
+          alert('読み込み終了"');
+        });
       });
     });
   </script>
