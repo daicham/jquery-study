@@ -7,13 +7,16 @@
 </head>
 <body>
   <h1>jQueryの練習</h1> 
-  <div id="main"></div>
+  <input type="text" id="user_name">
   <input type="button" value="Ajax" id="kick_ajax">
+  <div id="result"></div>
   <script>
     $(function() {
       $('#kick_ajax').click(function() {
-        $('#main').load('contents.txt', function() {
-          alert('読み込み終了"');
+        $.post('/wordcount', {
+          user_name: $('#user_name').val()
+        }, function(data) {
+          $('#result').text(data);
         });
       });
     });
